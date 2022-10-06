@@ -1,5 +1,4 @@
 absl-py==1.1.0
-aiohttp @ file:///C:/ci/aiohttp_1646806572557/work
 aiosignal @ file:///tmp/build/80754af9/aiosignal_1637843061372/work
 alabaster @ file:///home/ktietz/src/ci/alabaster_1611921544520/work
 anaconda-client @ file:///C:/ci/anaconda-client_1635342725944/work
