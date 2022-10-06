@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html >
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+<head>
+  <meta charset="UTF-8">
+  <title>HEART PREDICTION</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+  
+</head>
+
+<body>
+ <div class="login">
+	<h1>Heart Disease Analysis</h1>
+
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{url_for('predict')}}" method="post">
+    	<input type="text" name="age" placeholder="age" required="required" />
+      <input type="text" name="sex" placeholder="sex" required="required" />
+      <input type="text" name="cp" placeholder="cp" required="required" />
+      <input type="text" name="trestbps" placeholder="trestbps" required="required" />
+      <input type="text" name="chol" placeholder="chol" required="required" />
+      <input type="text" name="fbs" placeholder="fbs" required="required" />
+      <input type="text" name="restecg" placeholder="restecg" required="required" />
+      <input type="text" name="thalach" placeholder="thalach" required="required" />
+      <input type="text" name="exang" placeholder="exang" required="required" />
+      <input type="text" name="oldpeak" placeholder="oldpeak" required="required" />
+      <input type="text" name="slope" placeholder="slope" required="required" />
+      <input type="text" name="ca" placeholder="ca" required="required" />
+      <input type="text" name="thal" placeholder="thal" required="required" />
+      
+      <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+
+   <br>
+   <br>
+   {{prediction_text}}
+
+ </div>
+
+
+</body>
+</html>
